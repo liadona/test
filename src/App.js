@@ -6,6 +6,7 @@ import Login from './login';
 import Mycoin from './mycoin';
 import Kategori from './kategori';
 import Live from './live';
+import Lelang from './lelang';
 import Pengaturan from './pengaturan';
 import Logout from './logout';
 import './App.css';
@@ -34,6 +35,7 @@ class App extends Component {
                   <Link to="/mycoin">MyCoin</Link>
                   <Link to="/kategori">Kategori</Link>
                   <Link to="/live">live</Link>
+                  <Link to="/lelang">Lelang</Link>
                   <Link to="/pengaturan">Pengaturan</Link>
                   <Link to="/logout">Log Out</Link>
                 </Navigation>
@@ -44,6 +46,7 @@ class App extends Component {
                   <Route path="/mycoin"exact component={Mycoin} />
                   <Route path="/kategori" exact component={Kategori} />
                   <Route path="/live" exact component={Live} />
+                  <Route path="/lelang" exact component={Lelang} />
                   <Route path="/pengaturan" exact component={Pengaturan} />
                   <Route path="/logout" exact component={Logout} />
                 </main>
